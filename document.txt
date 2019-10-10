@@ -9,3 +9,9 @@ node index.js
 npm i socket.io
 Server side, we have to write event listen to know who just connect to server
 Client side, write method want to connect to server
+
+ - when have client connect right away io.on(listen) create a socket variable
+ - This socket variable to manage connection's client 
+ - based on socket IO to distinguish which client
+
+Refer:https://socket.io/docs/

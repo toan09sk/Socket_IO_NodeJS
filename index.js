@@ -10,8 +10,12 @@ var io = require("socket.io")(server);
 server.listen(3000);
 
 io.on("connection", (socket) => {
-    console.log("co nguoi ket noi");
-})
+    console.log("co nguoi ket noi:" + socket.id);
+
+    socket.on("disconnect", () => {
+        console.log(socket.id + " ngat ket noi!!!");
+    });
+});
 
 app.get("/", (req, res) => {
     res.render("trangchu");
