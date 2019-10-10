@@ -1,1 +1,7 @@
 npm init
+
+express package to work with web
+npm i express ejs
+
+run
+node index.js

@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Node JS socket IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toan09sk/Socket_IO_NodeJS.git"
+  },
+  "author": "Ross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toan09sk/Socket_IO_NodeJS/issues"
+  },
+  "homepage": "https://github.com/toan09sk/Socket_IO_NodeJS#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
