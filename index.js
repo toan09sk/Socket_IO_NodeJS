@@ -12,6 +12,10 @@ server.listen(3000);
 io.on("connection", (socket) => {
     console.log("co nguoi ket noi:" + socket.id);
 
+    socket.on("Client-send-data", (data) => {
+        console.log(data);
+    })
+
     socket.on("disconnect", () => {
         console.log(socket.id + " ngat ket noi!!!");
     });

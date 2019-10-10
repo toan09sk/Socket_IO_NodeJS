@@ -15,3 +15,6 @@ Client side, write method want to connect to server
  - based on socket IO to distinguish which client
 
 Refer:https://socket.io/docs/
+
+Phat tin hieu thuat ngu la emit
+lang nghe tin hieu thuat ngu on
