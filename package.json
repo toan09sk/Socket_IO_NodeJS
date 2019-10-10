@@ -18,6 +18,7 @@
   "homepage": "https://github.com/toan09sk/Socket_IO_NodeJS#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
   }
 }

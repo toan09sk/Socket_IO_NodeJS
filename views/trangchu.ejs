@@ -3,9 +3,13 @@
 <head>
     <title>Demo Socket IO</title>
     <script src="jquery-3.4.1.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
     <script>
+        // goi dien len server
+        var socket = io("http://localhost:3000");
+
         $(document).ready(function() {
-            alert("hello jquery");
+            // alert("hello jquery");
         });
     </script>
 </head>
