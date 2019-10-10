@@ -16,7 +16,9 @@ io.on("connection", (socket) => {
     socket.on("Client-send-data", (data) => {
         console.log(data);
         // Bay gio server phat data
-        io.sockets.emit("Server-send-data", data + "8888");
+        //io.sockets.emit("Server-send-data", data + "8888");
+        // Chi A moi nhan
+        socket.emit("Server-send-data", data + "8888");
     })
 
     socket.on("disconnect", () => {
