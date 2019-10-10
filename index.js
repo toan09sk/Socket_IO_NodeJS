@@ -15,10 +15,12 @@ io.on("connection", (socket) => {
     // Server lang nghe
     socket.on("Client-send-data", (data) => {
         console.log(data);
-        // Bay gio server phat data
+        // Bay gio server phat data tat ca deu nhan
         //io.sockets.emit("Server-send-data", data + "8888");
-        // Chi A moi nhan
-        socket.emit("Server-send-data", data + "8888");
+        // thang nao gui thi thang do moi nhan data
+        //socket.emit("Server-send-data", data + "8888");
+        // thang nao gui thi thang do khong nhan nhung nhung thang con lai nhan
+        socket.broadcast.emit("Server-send-data", data + "8888");
     })
 
     socket.on("disconnect", () => {

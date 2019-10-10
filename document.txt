@@ -18,3 +18,10 @@ Refer:https://socket.io/docs/
 
 Phat tin hieu thuat ngu la emit
 lang nghe tin hieu thuat ngu on
+
+Th1: Gui tin hieu lai cho tat ca nhung nguoi trong he thong. Ai dang ket noi vao server thi tai ve het
+Th2 : chi tr ve cho 1 nguoi A
+Th3 : A la thang gui len va server chi tra ve cho nhung thang con lai, khong tra cho thang A
+
+IO la thu vien minh su dung
+Socket la khi 1 nguoi ket noi len server thi no tao ra socket de quan tri thang do
