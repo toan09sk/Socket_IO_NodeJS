@@ -8,8 +8,14 @@
         // goi dien len server
         var socket = io("http://localhost:3000");
 
+        // clien lang nghe tu server
+        socket.on("Server-send-data", function(data) {
+            $("#noidung").append(data + ", ");
+        });
+
         $(document).ready(function() {
             $("#mrA").click(function() {
+                // phat hello len server
                 socket.emit("Client-send-data", "hello");
             });
         });
@@ -17,9 +23,9 @@
 </head>
 
 <body>
-    Hello world
-
     <div id="mrA">Click send</div>
+
+    <h2 id="noidung"></h2>
 </body>
 
 </html>

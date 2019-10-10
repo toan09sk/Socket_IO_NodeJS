@@ -12,8 +12,11 @@ server.listen(3000);
 io.on("connection", (socket) => {
     console.log("co nguoi ket noi:" + socket.id);
 
+    // Server lang nghe
     socket.on("Client-send-data", (data) => {
         console.log(data);
+        // Bay gio server phat data
+        io.sockets.emit("Server-send-data", data + "8888");
     })
 
     socket.on("disconnect", () => {
